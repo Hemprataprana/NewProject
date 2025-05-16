@@ -13,7 +13,7 @@ class TaskController extends Controller
         $tasks = Task::where('is_completed', false)->latest()->get();
         return view('tasks.index', compact('tasks'));
     }
- 
+ //store all tasks
     public function store(Request $request)
     {
         $validatedData = $request->validate([
