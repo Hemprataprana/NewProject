@@ -97,11 +97,9 @@ $('.complete-task').on('change', function() {
                         },
                         success: function() {
                             li.remove();
- 
                             if ($('#taskList li').length === 0) {
                                 $('#taskList').html('<p>No tasks yet.</p>');
                             }
- 
                             Swal.fire({
                                 toast: true,
                                 position: 'top-end',
@@ -122,7 +120,6 @@ $('.complete-task').on('change', function() {
                 }
             });
         });
- 
         // Success Message
         @if(session('success'))
             Swal.fire({

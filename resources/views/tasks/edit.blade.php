@@ -42,7 +42,6 @@
         @endif
  
         @if($errors -> any())
-        // Prevent SweetAlert if there are input errors
         @if(!$errors -> has('title'))
         Swal.fire({
             icon: 'error',

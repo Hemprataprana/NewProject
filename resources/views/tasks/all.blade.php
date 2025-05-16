@@ -40,6 +40,7 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
+    //complete task once we hit the checkbox
         $('.complete-task:not(:disabled)').on('change', function() {
             var li = $(this).closest('li');
             var id = li.data('id');
